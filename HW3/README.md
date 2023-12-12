@@ -1,3 +1,10 @@
+## HW3
+Here we evaluate the performance of product recommendataion recommenders with different settings (With/Without side information).
+
+## Dataset
+Download the full dataset and save it to `HW3/SA2C_code/Kaggle/data`
+Retailrocket: https://www.kaggle.com/datasets/retailrocket/ecommerce-dataset
+
 ## Performance Comparison
 
 - Table 1. Cumulative Reward Comparison
@@ -27,3 +34,8 @@
 | Purchase HR/NDCG @ 15 | 0.609/0.468 | 0.535/0.379 | 0.502/0.335 | 0.390/0.243 |
 | Purchase HR/NDCG @ 20 | 0.625/0.472 | 0.557/0.384 | 0.531/0.342 | 0.419/0.250 |
 
+
+## Conclusion
+Based on the comparison results under different settings shown in the above tables, we found that adding side information as features does not yield better performance in terms of accumulative reward, click HR, click NDCG, purchase HR, purchase NDCG, especially when the weight of side information $\lambda$ has a larger value. 
+
+Furthen investioation is required to find out the reason of performance degration after mixing side information. One reason might be the side information is not helpful/irrelevant to task. Another reason might be the way that combines the side information is not well-designed. In current approach, the combination is done via a linear fucntion, which might limit the learning capability. A better approach might be concatenating two tensors and using a fully-connected layer to combine the information within the two information channels.
