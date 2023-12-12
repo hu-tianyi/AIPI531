@@ -15,7 +15,7 @@ Retailrocket: https://www.kaggle.com/datasets/retailrocket/ecommerce-dataset
     | Cumulative<br>Reward @ 10 | 10542.0 | 9155.0 | 8318.8 | 6250.0 |
     | Cumulative<br>Reward @ 15 | 11349.6 | 10042.8 | 9292.4 | 7248.0 |
     | Cumulative<br>Reward @ 20 | 11877.6 | 10660.2 | 9965.8 | 7928.2 |
- 
+
 <br>
 - Table 2. Click Performance Comparison
 
@@ -25,7 +25,6 @@ Retailrocket: https://www.kaggle.com/datasets/retailrocket/ecommerce-dataset
     | Click HR/NDCG @ 10 | 0.315/0.221 | 0.275/0.184 | 0.248/0.160 | 0.188/0.116 |
     | Click HR/NDCG @ 15 | 0.343/0.229 | 0.305/0.192 | 0.280/0.169 | 0.219/0.124 |
     | Click HR/NDCG @ 20 | 0.362/0.233 | 0.326/0.197 | 0.302/0.174 | 0.241/0.129 |
-
 
 <br>
 - Table 3. Purchase Performance Comparison
