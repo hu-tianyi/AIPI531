@@ -1,0 +1,70 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 3 issues that require attention
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+File: SNQN.py
+--------------------------------------------------------------------------------
+SNQN.py:78:29: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+SNQN.py:159:36: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+SNQN.py:174:26: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'SNQN.py'
+ outputting to 'SNQN_new.py'
+--------------------------------------------------------------------------------
+
+68:27: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+71:13: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+73:26: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+74:29: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+78:29: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+81:46: INFO: Renamed 'tf.nn.dynamic_rnn' to 'tf.compat.v1.nn.dynamic_rnn'
+82:20: INFO: Renamed 'tf.contrib.rnn.GRUCell' to 'tf.compat.v1.nn.rnn_cell.GRUCell'
+89:38: INFO: Changed tf.to_float call to tf.cast(..., dtype=tf.float32).
+99:25: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+99:25: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+102:40: INFO: Renamed 'tf.truncated_normal' to 'tf.random.truncated_normal'
+105:31: INFO: Added keywords to args of function 'tf.nn.conv2d'
+105:31: INFO: Renamed keyword argument for tf.nn.conv2d from filter to filters
+116:33: INFO: Added keywords to args of function 'tf.nn.max_pool'
+116:33: INFO: Renamed keyword argument for tf.nn.max_pool from value to input
+116:33: INFO: Renamed 'tf.nn.max_pool' to 'tf.nn.max_pool2d'
+129:21: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+129:21: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+131:36: INFO: Renamed 'tf.truncated_normal' to 'tf.random.truncated_normal'
+133:27: INFO: Added keywords to args of function 'tf.nn.conv2d'
+133:27: INFO: Renamed keyword argument for tf.nn.conv2d from filter to filters
+144:21: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+144:21: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+145:41: INFO: Renamed 'tf.layers.dropout' to 'tf.compat.v1.layers.dropout'
+150:38: INFO: Changed tf.to_float call to tf.cast(..., dtype=tf.float32).
+159:36: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+174:26: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+179:38: INFO: Changed tf.to_float call to tf.cast(..., dtype=tf.float32).
+181:27: INFO: Renamed 'tf.layers.dropout' to 'tf.compat.v1.layers.dropout'
+189:25: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+222:27: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+224:34: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+226:29: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+227:37: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+229:26: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+230:28: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+232:36: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+233:44: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+252:23: INFO: Renamed 'tf.train.AdamOptimizer' to 'tf.compat.v1.train.AdamOptimizer'
+257:17: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+258:47: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+260:45: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+345:4: INFO: Renamed 'tf.reset_default_graph' to 'tf.compat.v1.reset_default_graph'
+356:9: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+358:17: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+--------------------------------------------------------------------------------
+
